@@ -7,23 +7,19 @@ function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
   const [homeScore, changeHomeScore] = React.useState(0)
   const [awayScore, changeAwayScore] = React.useState(0)
-
+  
   const handleHomeTD = e => {
     changeHomeScore(homeScore + 7);
   };
-
   const handleHomeFG = e => {
     changeHomeScore(homeScore + 3);
   };
-
   const handleAwayTD = e => {
     changeAwayScore(awayScore + 7);
   };
-
   const handleAwayFG = e => {
     changeAwayScore(awayScore + 3);
   };
-
   return (
     <div className="container">
       <section className="scoreboard">
